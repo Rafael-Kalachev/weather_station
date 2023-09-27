@@ -1,0 +1,47 @@
+# Partly inspired by QT coding style
+BasedOnStyle: WebKit
+Language: Cpp
+ColumnLimit: 100
+BreakBeforeBinaryOperators: NonAssignment
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+AlignEscapedNewlines : Left
+AlwaysBreakTemplateDeclarations: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+SortIncludes: false
+AlignTrailingComments: true
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBraces: Allman
+IndentCaseLabels: true
+IndentCaseBlocks: true
+IndentExternBlock: NoIndent
+IndentPPDirectives: AfterHash 
+InsertBraces: true
+UseCRLF: false
+MaxEmptyLinesToKeep: 2
+QualifierAlignment: Left
+PointerAlignment: Left
+ReferenceAlignment: Right
+SeparateDefinitionBlocks: Always
+SortIncludes: Never
+SpaceAfterCStyleCast: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+UseTab: ForIndentation
+IndentWidth: 4
+TabWidth: 4
