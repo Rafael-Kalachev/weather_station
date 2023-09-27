@@ -1,0 +1,30 @@
+#!/bin/sh
+
+###
+# Global Variables
+###
+
+RESULT=0
+
+###
+# Functions
+###
+
+check_unformatted_files(){
+	git diff --name-only --cached \
+	| grep "\.c$\|\.h$" \
+	| xargs ./tools/format_code.sh --check || return 1
+}
+
+
+###
+# MAIN
+###
+
+check_unformatted_files
+RESULT=$?
+if [ ${RESULT} -ne 0 ]
+then
+	echo "ERROR: There are staged files that have not been properly formatted";
+	exit 1 
+fi
