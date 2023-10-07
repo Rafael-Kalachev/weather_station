@@ -66,7 +66,7 @@ done
 
 if [ ! -f "${DOXYFILE}" ]
 then
-	echo "The provided Doxyfile '${DOXYFILE}' must be and existing file containing valid doxygen configuration."
+	echo "The provided Doxyfile '${DOXYFILE}' must be and existing file."
 fi
 c
 # Add Variables from ENV_FILE to environment
