@@ -1,5 +1,10 @@
 {
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
-	"editor.tabSize": 4
+	"editor.tabSize": 4,
+	
+	"path-autocomplete.triggerOutsideStrings": true,
+	"path-autocomplete.pathMappings": {
+		"$root" : [ "${folder}/include", "${folder}/src", "${folder}"]
+	}
 }
